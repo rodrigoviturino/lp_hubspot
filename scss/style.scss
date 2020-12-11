@@ -1,0 +1,38 @@
+/*!
+Theme Name: Lp Hubspot
+Text Domain: lphubspot
+Version: 1.0.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Desenvolvimento tema da landing page do hubspot como modelo
+Author: Rodrigo Viturino
+Author URI: https://rodrigoviturino.com.br/
+Theme URI: http://rodrigoviturino.com.br/theme_hubspot/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Bootstrap */
+    @import "./bootstrap-scss/bootstrap-reboot.scss";
+    @import "./bootstrap-scss/bootstrap-grid.scss";
+    @import "./bootstrap-scss/bootstrap.scss";
+/* end Bootstrap */
+
+/* Website */
+@import "global/global";
+@import "base/variable-custom";
+
+@import "global/header";
+@import "global/footer";
+@import "global/internal_pages";
+
+@import "pages/home";
+
+/* end Website */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}

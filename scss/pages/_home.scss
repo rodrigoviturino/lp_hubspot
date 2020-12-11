@@ -1,0 +1,162 @@
+.pageHome {
+  &__intro {
+    /* background-image: url("assets/images/banner_LP_PSA.webp"); */
+
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0 0;
+    position: relative;
+    top: 95px;
+    height: 100vh;
+    max-width: 100%;
+
+    &__block-title {
+      h1 {
+        font-weight: 800;
+        line-height: 50px;
+        color: #1f3045;
+        // width: 56%;
+        margin-bottom: map-get($spacers, 4);
+        @include responsive-font-size(40px);
+      }
+      p {
+        font-weight: 500;
+        line-height: 26px;
+        color: #1f3045;
+        width: 60%;
+        @include responsive-font-size(16px);
+      }
+    }
+
+    &__form {
+      form {
+        background-color: #fff;
+        padding: 20px;
+        // box-shadow: rgba(0,0,0,.2) 0px 10px 20px -8px;
+
+        label {
+          font-weight: 700;
+          @include responsive-font-size(14px);
+        }
+
+        .labelTermoPolitica {
+          margin-bottom: map-get($spacers, 3);
+          label {
+            font-weight: 600;
+            @include responsive-font-size(12px);
+          }
+        }
+
+        .enviar {
+          background-color: #a5dbd7;
+          border: solid 1px #a5dbd7;
+          text-transform: uppercase;
+          font-weight: 700;
+          border-radius: 6px;
+          padding: map-get($spacers, 3) 0;
+          color: #222;
+          @include responsive-font-size(16px);
+
+          &:hover {
+            color: #a5dbd7;
+            background-color: #fff;
+            border: solid 1px #a5dbd7;
+          }
+        }
+      }
+    }
+  }
+
+  &__materials {
+    // padding-top: 260px;
+    padding-top: 130px;
+    &__block-title {
+      text-align: center;
+      padding-bottom: 100px;
+      h2 {
+        color: #000;
+        font-weight: 700;
+        line-height: 38px;
+        @include responsive-font-size(24px);
+      }
+      p {
+        font-weight: 300;
+        color: #000;
+        max-width: 80%;
+        margin: 0 auto;
+        line-height: 26px;
+        @include responsive-font-size(16px);
+      }
+    }
+
+    &__card {
+      margin-bottom: 80px;
+      text-align: center;
+      transition: all 0.5s;
+      padding: 60px 0;
+
+      &:hover {
+        box-shadow: 1px, 2px, 2px, #000;
+        transition: all 0.5s;
+        box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.1);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-8px);
+        border-radius: 15px;
+
+        .image {
+          background-color: #a5dbd7;
+          transition: all 0.5s;
+          i {
+            color: #fff;
+            transition: all 0.5s;
+          }
+        }
+      }
+
+      .image {
+        background-color: #f7f6f4;
+        border-radius: 91px;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        transition: all 0.5s;
+
+        i {
+          color: #a5dbd7;
+          transition: all 0.5s;
+        }
+      }
+
+      .infos {
+        margin: 20px 0;
+        h3 {
+          color: #222;
+          font-weight: 700;
+          margin: 10px 0;
+          text-transform: capitalize;
+          @include responsive-font-size(18px);
+        }
+        p {
+          color: #858383;
+          font-weight: 300;
+          width: 250px;
+          margin: 0 auto;
+          line-height: 24px;
+          @include responsive-font-size(14px);
+        }
+        a {
+          display: inline-block;
+          margin-top: 10px;
+          color: #0460a9;
+          font-weight: 700;
+          @include responsive-font-size(14px);
+        }
+      }
+    }
+  }
+}

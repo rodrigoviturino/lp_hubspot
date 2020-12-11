@@ -1,0 +1,22 @@
+{
+  "name": "wp_theme_psoriase",
+  "version": "1.0.0",
+  "description": "Desenvolvimento Landing Page Padrão Novartis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigoviturino/wp_theme_psoriase.git"
+  },
+  "author": "Rodrigo Viturino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigoviturino/wp_theme_psoriase/issues"
+  },
+  "homepage": "https://github.com/rodrigoviturino/wp_theme_psoriase#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
